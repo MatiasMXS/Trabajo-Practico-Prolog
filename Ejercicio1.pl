@@ -18,4 +18,10 @@ es_adolecente(X):-años_de_edad(X,Y),Y>=10, Y=<20.
 es_adulto(X):-años_de_edad(X,Y),Y>=21, Y=<69.
 es_anciano(X):-años_de_edad(X,Y),Y>=70.
 
+mayor(X,Y):-años_de_edad(X,Z),años_de_edad(Y,W), Z>W.
+menor(X,Y):-años_de_edad(X,Z),años_de_edad(Y,W), Z<W.
+igual(X,Y):-años_de_edad(X,Z),años_de_edad(Y,W), Z=W.
+
+
+
 
